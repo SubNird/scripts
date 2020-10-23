@@ -1,11 +1,12 @@
 #!/bin/bash
 #by Nird
-if [ ! -f /opt/cprocsp/bin/amd64/certmgr ]
+workdir=/opt/cprocsp/bin/amd64
+if [ ! -f $workdir/certmgr ]
 then
-	echo -e "CryptoPro не установлен или директория по умолчанию отличается от '/opt/cprocsp/bin/amd64'\n"
+	echo -e "CryptoPro не установлен или директория по умолчанию отличается от '$workdir'\n"
 	exit
 else
-	cd /opt/cprocsp/bin/amd64/
+	cd $workdir
 fi
 case $1 in
 	"-list" )
