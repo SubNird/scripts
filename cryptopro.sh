@@ -1,5 +1,5 @@
 #!/bin/bash
-#by Nird
+#by Nird (https://github.com/SubNird)
 workdir=/opt/cprocsp/bin/amd64
 if [ ! -f $workdir/certmgr ]
 then
